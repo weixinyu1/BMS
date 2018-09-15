@@ -1,0 +1,194 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>图书管理系统-借阅书籍</title>
+{% include 'link_css.html' %}
+</head>
+
+    <body>
+        <!-- Header gallery -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <section class="tm-header-gallery">
+                        
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-pad-0">
+                            <a href="{% static 'img/img-11-05.jpg' %}">
+                                <img src="{% static 'img/img-11-05.jpg' %}" alt="Image" class="img-fluid tm-header-img col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                            </a>
+                            <a href="{% static 'img/img-11-02.jpg' %}">
+                                <img src="{% static 'img/img-11-02.jpg' %}" alt="Image" class="img-fluid tm-header-img col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                            </a>                        
+                        </div>
+                        
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-pad-0">
+                            
+                            <div class="tm-site-name">
+                               <img src="{% static 'img/sxtlogo.jpg' %}" alt="" style="width: auto;height: auto">
+                            </div>
+                            
+                            <img src="{% static 'img/logo-bg.jpg' %}" alt="Image" class="img-fluid tm-header-img">
+                        </div>
+                                        
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-pad-0">
+                            <a href="{% static 'img/img-11-01.jpg' %}">
+                                <img src="{% static 'img/img-11-01.jpg' %}" alt="Image" class="img-fluid tm-header-img col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                            </a>
+                            <a href="{% static 'img/img-11-06.jpg' %}">
+                                <img src="{% static 'img/img-11-06.jpg' %}" alt="Image" class="img-fluid tm-header-img col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                            </a>                        
+                        </div>                
+
+                    </section>
+                </div>
+            </div>                
+            
+            <!-- Navigation -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar">
+                        <div id="tmNavbar">
+                            <div class="nav navbar-nav tm-nav">
+                                
+                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-pad-0 tm-nav-item-pair">
+                                    <div class="nav-item">
+                                        <a class="nav-link" href="index.html">主页</a>
+                                    </div>
+                                    <div class="nav-item">
+                                <a class="nav-link" href="/person/">个人</a>
+                                    </div>    
+                                </div>
+                                
+                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-pad-0 tm-nav-item-pair">
+                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 nav-item active">
+                                <a class="nav-link" href="/borrow/">借阅</a>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 nav-item">
+                                       <a class="nav-link" href="/allbook/">全部书籍</a>
+                                    </div>    
+                                </div>
+
+                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-pad-0 tm-nav-item-pair">
+                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 nav-item">
+                                        <a class="nav-link" href="contact.html">联络</a>
+                                    </div>
+                                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="row tm-services-row">
+
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 tm-services-col-left">
+                    
+                    <div>
+                        <img src="{% static 'img/img-11-01.jpg' %}" alt="Image" class="img-fluid col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 tm-pad-0">
+                        <img src="{% static 'img/img-11-07.jpg' %}" alt="Image" class="img-fluid col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 tm-pad-0">
+                        <img src="{% static 'img/img-11-08.jpg' %}" alt="Image" class="img-fluid col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 tm-pad-0">
+                        <img src="{% static 'img/img-11-05.jpg' %}" alt="Image" class="img-fluid col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 tm-pad-0">
+                    </div>
+                    
+                </div>
+                
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 tm-services-col-right">                    
+                    <div class="tm-services-box">
+                        <h2 class="tm-blue-text tm-services-title">《热爱生命》</h2>
+                        <p class="tm-services-description">我不去想是否能够成功既然选择了远方便只顾风雨兼程我不去想能否赢得爱情既然钟情于玫瑰就勇敢地吐露真诚我不去想身后会不会袭来寒风冷雨既然目标是地平线留给世界的只能是背影我不去想未来是平坦还是泥泞只要热爱生命一切，都在意料之中　. </p>
+                                              
+                    </div>
+                    
+                </div>
+
+            </div>
+
+
+            <div class="row tm-nav-2-row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <nav class="tm-flex-center">
+                        <ul class="tm-nav-2">
+                            <li class="tm-nav-item-2"><a href="index.html" class="tm-nav-link-2">Home</a></li>
+                            <li class="tm-nav-item-2"><a href="person.html" class="tm-nav-link-2">Person</a></li>
+                            <li class="tm-nav-item-2"><a href="borrow.html" class="tm-nav-link-2">Borrow</a></li>
+                            <li class="tm-nav-item-2"><a href="allbook.html" class="tm-nav-link-2">AllBook</a></li>
+                            <li class="tm-nav-item-2"><a href="contact.html" class="tm-nav-link-2">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div> <!-- row -->
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <div class="tm-social-icons-container text-xs-center">
+                         <a href="https://www.facebook.com/" class="tm-social-link"><i class="fa fa-facebook"></i></a>
+                        <a href="http://googleplussearch.chromefans.org/" class="tm-social-link"><i class="fa fa-google-plus"></i></a>
+                        <a href="https://twitter.com/" class="tm-social-link"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.behance.net/" class="tm-social-link"><i class="fa fa-behance"></i></a>
+                        <a href="https://www.linkedin.com/" class="tm-social-link"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="row tm-footer">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <p class="text-xs-center tm-copyright">Copyright &copy; LNTU Your Company 
+                    
+                    | Design: <a href="http://www.lntu.edu.cn/" target="_parent">辽宁工程技术大学</a></p>
+                </div>
+            </footer>
+            
+        </div> <!-- container-fluid -->
+
+        <!-- Preloader, https://ihatetomatoes.net/create-custom-preloading-screen/ -->
+        <div id="loader-wrapper">
+            
+            <div id="loader"></div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+
+        </div>
+        
+       {% include 'script.html' %}
+                <script>
+            $(window).load(function(){
+
+                /* Gallery pop up
+                -----------------------------------------*/
+                $('.tm-header-gallery').magnificPopup({
+                    delegate: 'a', // child items selector, by clicking on it popup will open
+                    type: 'image',
+                    gallery:{enabled:true}                
+                });
+
+                // Tabs
+                // http://stackoverflow.com/questions/11645081/how-to-build-simple-tabs-with-jquery
+                $('.tm-tab-content-box').hide();                
+                //$('#tab1C').fadeIn('slow');
+                $('#tab1C').show();
+
+                $('.tm-tab-link').click(function(){
+                  
+                    var t = $(this).attr('id');
+                    
+                    $('.tm-tab-link').removeClass('active');
+                    $(this).addClass('active');                    
+
+                    $('.tm-tab-content-box').hide();
+                    $('#'+ t + 'C').fadeIn('slow');
+                
+                });
+
+                // Remove preloader
+                // https://ihatetomatoes.net/create-custom-preloading-screen/
+                $('body').addClass('loaded');
+                           
+            });
+
+        </script>             
+
+</body>
+</html>

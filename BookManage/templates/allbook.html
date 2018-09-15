@@ -1,0 +1,244 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>图书管理系统-全部书籍</title>
+{% include 'link_css.html' %}
+</head>
+
+    <body>
+        <!-- Header gallery -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <section class="tm-header-gallery">
+                        
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-pad-0">
+                            <a href="{% static 'img/img-11-03.jpg' %}">
+                                <img src="{% static 'img/img-11-03.jpg' %}" alt="Image" class="img-fluid tm-header-img col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                            </a>
+                            <a href="{% static 'img/img-11-04.jpg' %}">
+                                <img src="{% static 'img/img-11-04.jpg' %}" alt="Image" class="img-fluid tm-header-img col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                            </a>                         
+                        </div>
+                        
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-pad-0">
+                            
+                            <div class="tm-site-name">
+                                <img src="{% static 'img/sxtlogo.jpg' %}" alt="" style="width: auto;height: auto">
+                            </div>
+                            
+                            <img src="{% static 'img/logo-bg.jpg' %}" alt="Image" class="img-fluid tm-header-img">
+                        </div>
+                                        
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-pad-0">
+                            <a href="{% static 'img/img-11-07.jpg' %}">
+                                <img src="{% static 'img/img-11-07.jpg' %}" alt="Image" class="img-fluid tm-header-img col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                            </a>
+                            <a href="{% static 'img/img-11-08.jpg' %}">
+                                <img src="{% static 'img/img-11-08.j' %}pg" alt="Image" class="img-fluid tm-header-img col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                            </a>                       
+                        </div>                
+                        
+                    </section>
+                </div>
+            </div>                
+            
+            <!-- Navigation -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar">
+                        <div id="tmNavbar">
+                            <div class="nav navbar-nav tm-nav">
+                                
+                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-pad-0 tm-nav-item-pair">
+                                    <div class="nav-item">
+                                        <a class="nav-link" href="/index/">主页</a>
+                                    </div>
+                                    <div class="nav-item">
+                                        <a class="nav-link" href="/person/">个人</a>
+                                    </div>    
+                                </div>
+                                
+                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-pad-0 tm-nav-item-pair">
+                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 nav-item">
+                                        <a class="nav-link" href="/borrow/">借阅</a>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 nav-item active">
+                                        <a class="nav-link" href="/allbook/">全部书籍</a>
+                                    </div>    
+                                </div>
+
+                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-pad-0 tm-nav-item-pair">
+                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 nav-item">
+                                        <a class="nav-link" href="/contact/">联系</a>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 nav-item tm-dummy-nav-item">
+                                        <div class="nav-link">&nbsp;</div>
+                                    </div>
+                                </div>                            
+                                
+                            </div>    
+                        </div>                    
+                    </nav>     
+                </div>
+                   
+            </div> <!-- row -->
+
+            <div class="row tm-blog-post-row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 tm-blog-post-margin-b tm-blog-post-box-container">
+                    <div class="tm-blog-post-box">
+                        <img src="{% static 'img/img-21-01.jpg' %}" alt="Image" class="img-fluid">
+                        <div class="tm-blog-post-text-box-outer">
+                            <div class="tm-blog-post-text-box">
+                                <h2 class="tm-blog-post-title">《感谢》</h2>
+                                <p class="tm-blog-post-description">让我怎样感谢你
+当我走向你的时候
+我原想收获一缕春风
+你却给了我整个春天
+让我怎样感谢你
+当我走向你的时候
+我原想捧起一簇浪花
+你却给了我整个海洋
+让我怎样感谢你
+当我走向你的时候
+我原想撷取一枚红叶
+你却给了我整个枫林
+让我怎样感谢你
+当我走向你的时候
+我原想亲吻一朵雪花
+你却给了我银色的世界.</p>
+                                 
+                            </div>
+                            
+                        </div>                                                
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 tm-blog-post-margin-b tm-blog-post-box-container">
+                    <div class="tm-blog-post-box">
+                        <img src="{% static 'img/img-21-02.jpg' %}" alt="Image" class="img-fluid">
+                        <div class="tm-blog-post-text-box-outer">
+                            <div class="tm-blog-post-text-box">
+                                <h2 class="tm-blog-post-title">《学会等待》</h2>
+                                <不要因为一次的失败就打不起精神，
+每个成功的人背后都有苦衷。
+你看即便像太阳那样辉煌，
+有时也被浮云遮住了光阴。
+你的才华不会永远被埋没，
+除非你自己想把前途葬送。
+你要学会等待和安排自己，
+成功其实不需要太多酒精。
+要当英雄不妨先当狗熊，
+怕只怕对什么都无动于衷。
+河上没有桥还可以等待结冰，
+走过漫长的黑夜便是黎明。</p>
+                               
+                            </div>
+                            
+                        </div>  
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 tm-blog-post-margin-b-0 tm-blog-post-box-container">
+                    <div class="tm-blog-post-box">
+                        <img src="{% static 'img/img-21-03.jpg' %}" alt="Image" class="img-fluid">
+                        <div class="tm-blog-post-text-box-outer">
+                            <div class="tm-blog-post-text-box">
+                                <h2 class="tm-blog-post-title">《嫁给幸福》</h2>
+                                <p class="tm-blog-post-description">有一个未来的目标
+总能让我们欢欣鼓舞
+就像飞向火光的灰蛾
+甘愿做烈焰的俘虏
+摆动着的是你不停的脚步
+飞旋着的是你美丽的流苏
+在一往情深的日子里
+谁能说得清
+什么是甜 什么是苦
+只知道 确定了就义无返顾
+要输就输给追求
+要嫁就嫁给幸福</p>
+                               
+                            </div>                            
+                        </div>  
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 tm-blog-post-margin-b-0 tm-blog-post-box-container">
+                    <div class="tm-blog-post-box">
+                        <img src="{% static 'img/img-21-04.jpg' %}" alt="Image" class="img-fluid">
+                        <div class="tm-blog-post-text-box-outer">
+                            <div class="tm-blog-post-text-box">
+                                <h2 class="tm-blog-post-title">《假如你不够快乐》</h2>
+                                <p class="tm-blog-post-description">假如你不够快乐
+也不要把眉头深锁
+人生本来短暂
+为什么　还要栽培苦涩
+打开尘封的门窗
+让阳光雨露洒遍每个角落
+走向生命的原野
+让风儿熨平前额
+博大可以稀释忧愁
+深色能够覆盖浅色</p>
+                                                            
+                            </div>                            
+                        </div>  
+                    </div>
+                </div>
+            </div>
+
+            <div class="row tm-nav-2-row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <nav class="tm-flex-center">
+                        <ul class="tm-nav-2">
+                            <li class="tm-nav-item-2"><a href="index.html" class="tm-nav-link-2">Home</a></li>
+                            <li class="tm-nav-item-2"><a href="person.html" class="tm-nav-link-2">Person</a></li>
+                            <li class="tm-nav-item-2"><a href="borrow.html" class="tm-nav-link-2">Borrow</a></li>
+                            <li class="tm-nav-item-2"><a href="allbook.html" class="tm-nav-link-2">AllBook</a></li>
+                            <li class="tm-nav-item-2"><a href="contact.html" class="tm-nav-link-2">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div> <!-- row -->
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <div class="tm-social-icons-container text-xs-center">
+                           <a href="https://www.facebook.com/" class="tm-social-link"><i class="fa fa-facebook"></i></a>
+                        <a href="http://googleplussearch.chromefans.org/" class="tm-social-link"><i class="fa fa-google-plus"></i></a>
+                        <a href="https://twitter.com/" class="tm-social-link"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.behance.net/" class="tm-social-link"><i class="fa fa-behance"></i></a>
+                        <a href="https://www.linkedin.com/" class="tm-social-link"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="row tm-footer">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <p class="text-xs-center tm-copyright">Copyright &copy; LNTU Your Company 
+                    
+                    | Design: <a href="http://www.lntu.edu.cn/" target="_parent">辽宁工程技术大学</a></p>
+                </div>
+            </footer>
+            
+        </div> <!-- container-fluid -->
+        
+    {% include 'script.html' %}
+        <script>
+            $(window).load(function(){
+
+                /* Gallery pop up
+                -----------------------------------------*/
+                $('.tm-header-gallery').magnificPopup({
+                    delegate: 'a', // child items selector, by clicking on it popup will open
+                    type: 'image',
+                    gallery:{enabled:true}                
+                });
+                           
+            });
+
+        </script>             
+
+</body>
+</html>

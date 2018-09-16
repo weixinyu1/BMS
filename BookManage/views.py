@@ -13,7 +13,7 @@ def index_view(request):
         return HttpResponseRedirect('/login/')
     uname=request.POST.get('username','')
     upwd=request.POST.get('password','')
-    print uname,upwd
+    # print uname,upwd
     count = User.objects.filter(uname=uname, upwd=upwd).count()
     user=User.objects.get(uname=uname, upwd=upwd)
     if count == 1:
@@ -52,7 +52,7 @@ def register_view(request):
         #接收数据
         uname = request.POST.get('username','')
         upwd=request.POST.get('password','')
-        print uname,upwd
+        # print uname,upwd
         insertUser(uname,upwd)
         return HttpResponseRedirect('/login/')
 
